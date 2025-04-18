@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Spotify Grid")
+                .font(.title)
+            
+            Button("Login with Spotify") {
+                if let url = SpotifyAuthManager.shared.authURL() {
+                    NSWorkspace.shared.open(url)
+                } else {
+                    print("Failed to generate the Spotify auth URL")
+                }
+            }
         }
-        .padding()
+        .frame(width: 300, height: 200)
     }
 }
 

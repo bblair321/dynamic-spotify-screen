@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C9AC6EDF2DB2D44400822E3D /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = C9AC6EDE2DB2D44400822E3D /* Swifter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C9AC6EC82DB2973500822E3D /* spotify-wallpaper-grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-wallpaper-grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C9AC6ED82DB2986800822E3D /* Exceptions for "spotify-wallpaper-grid" folder in "spotify-wallpaper-grid" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C9AC6EC72DB2973500822E3D /* spotify-wallpaper-grid */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C9AC6ECA2DB2973500822E3D /* spotify-wallpaper-grid */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C9AC6ED82DB2986800822E3D /* Exceptions for "spotify-wallpaper-grid" folder in "spotify-wallpaper-grid" target */,
+			);
 			path = "spotify-wallpaper-grid";
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AC6EDF2DB2D44400822E3D /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = "spotify-wallpaper-grid";
 			packageProductDependencies = (
+				C9AC6EDE2DB2D44400822E3D /* Swifter */,
 			);
 			productName = "spotify-wallpaper-grid";
 			productReference = C9AC6EC82DB2973500822E3D /* spotify-wallpaper-grid.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = C9AC6EBF2DB2973500822E3D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C9AC6EDD2DB2D44400822E3D /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C9AC6EC92DB2973500822E3D /* Products */;
 			projectDirPath = "";
@@ -254,6 +276,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spotify-wallpaper-grid/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -279,6 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spotify-wallpaper-grid/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9AC6EDD2DB2D44400822E3D /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9AC6EDE2DB2D44400822E3D /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9AC6EDD2DB2D44400822E3D /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9AC6EC02DB2973500822E3D /* Project object */;
 }
